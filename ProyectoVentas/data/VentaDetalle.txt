@@ -1,0 +1,7 @@
+DV1	v2	P2	45.225	0.005	3.0	135.675	null
+DV2	V3	P3	50.25	0.005	3.0	150.75	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
+DV3	V4	P1	35.175	0.005	2.0	70.35	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
+DV4	V4	P2	45.225	0.005	2.0	90.45	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
+DV5	V5	P1	35.175	0.005	1.0	35.175	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
+DV6	V5	P2	45.225	0.005	1.0	45.225	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
+DV7	V5	P3	50.25	0.005	1.0	50.25	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
