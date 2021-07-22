@@ -1,7 +1,10 @@
 package pe.edu.upeu.dao;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
+import java.util.List;
 
 import pe.edu.upeu.data.AppCrud;
 import pe.edu.upeu.modelo.ProductoTO;
@@ -12,7 +15,7 @@ import pe.edu.upeu.util.LeerTeclado;
 import pe.edu.upeu.util.UtilsX;
 import org.fusesource.jansi.Ansi;
 import org.fusesource.jansi.AnsiConsole;
-import static org.fusesource.jansi.Ansi.Color.*;
+import org.fusesource.jansi.Ansi.Color.*;
 
 public class VentaDao extends AppCrud{
    LeerArchivo lar;
@@ -76,7 +79,16 @@ public class VentaDao extends AppCrud{
         vdTO.setPrecioTotal(vdTO.getCantidad()*vdTO.getPrecioUnit());
         lar=new LeerArchivo("VentaDetalle.txt");
         agregarContenido(lar, vdTO);
+        actualizarproducto(dataP, vdTO.getCantidad());
         return vdTO;
+    }
+
+    public void actualizarproducto(Object[][] prodTO, double canti){
+        lar=new LeerArchivo("Producto.txt");
+        ProductoTO p=new ProductoTO();
+        p.setIdProducto(prodTO[0][0].toString());
+        p.setStock(Double.parseDouble(prodTO[0][6].toString())-canti);
+        editarRegistro(lar, 0, p.getIdProducto(), p); 
     }
 
     public void mostrarProductos() {
@@ -214,8 +226,9 @@ public class VentaDao extends AppCrud{
             }
 
             ut.pintarLine('H', 40);
+            Ansi Color=new Ansi();
 
-            System.out.println(color.render("@|red Neto Total:S/. |@ @|green "+(Math.round(netoTotalX*100.0)/100.0)+
+            System.out.println(Color.render("@|red Neto Total:S/. |@ @|green "+(Math.round(netoTotalX*100.0)/100.0)+
             "|@ | @|red IGV: S/.|@ @|green "+(Math.round(igvX*100.0)/100.0)+"|@  | @|red Monto total: S/. |@ @|green "+
             (Math.round(precioTotalX*100.0)/100.0)+"|@"));
             

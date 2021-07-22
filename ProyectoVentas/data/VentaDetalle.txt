@@ -5,3 +5,10 @@ DV4	V4	P2	45.225	0.005	2.0	90.45	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
 DV5	V5	P1	35.175	0.005	1.0	35.175	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
 DV6	V5	P2	45.225	0.005	1.0	45.225	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
 DV7	V5	P3	50.25	0.005	1.0	50.25	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
+DV8	V6	P1	35.175	0.005	1.0	35.175	pe.edu.upeu.modelo.VentaDetalleTO$1@77caeb3e
+DV9	V6	P2	45.225	0.005	1.0	45.225	pe.edu.upeu.modelo.VentaDetalleTO$1@77caeb3e
+DV10	V6	P3	50.25	0.005	1.0	50.25	pe.edu.upeu.modelo.VentaDetalleTO$1@77caeb3e
+DV11	V7	P1	35.175	0.005	2.0	70.35	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
+DV12	V7	P1	35.175	0.005	1.0	35.175	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
+DV13	V7	P1	35.175	0.005	2.0	70.35	pe.edu.upeu.modelo.VentaDetalleTO$1@3bfdc050
+DV14	V8	P1	35.175	0.005	1.0	35.175	pe.edu.upeu.modelo.VentaDetalleTO$1@42d80b78
